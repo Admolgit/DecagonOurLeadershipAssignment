@@ -1,0 +1,135 @@
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(249, 246, 246);
+  font-family: sans-serif;
+  font-weight: 100;
+}
+
+.container {
+  width: 1500px;
+  margin: auto;
+}
+
+.leadership h2 {
+  font-size: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  text-align: center;
+  color: #444648;
+}
+
+.leader-group li:nth-child(1) {
+  padding-bottom: 1.5rem;
+  
+}
+
+.leader-group li:nth-child(3) {
+  padding-top: 1.5rem;
+}
+
+.leader-group li:nth-child(4) {
+  padding-top: 1.5rem;
+}
+
+.leadership-images {
+  background: #fff;
+  padding: 3rem 3rem;
+  max-width: 960px;
+}
+
+.leader-group {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: repeat(3, minmax(200px, auto));
+  gap: 2.5rem;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.leader-group h3 {
+  font-size: 2.2rem;
+  color: #343a40;
+  padding-top: 2.5rem;
+  font-weight: 100;
+}
+
+.leader-group p {
+  color: #6c757d;
+  padding-top: 0.5rem;
+  padding-bottom: 2rem;
+  font-size: 18px;
+}
+
+.leader-group li {
+  color: #44484b;
+  font-size: 20px;
+  padding-left: 1rem;
+  margin-left: 1rem;
+}
+
+.linkedin-icon {
+  font-size: 22px;
+  padding-top: 10rem;
+}
+
+.linkedin-icon a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #44484b;
+}
+
+.linkedin-icon a:hover {
+  color: green;
+}
+
+.linkedin-icon span {
+  margin-left: 2rem;
+}
+
+footer {
+  padding-top: 2rem;
+}
+
+
+@media screen and (max-width: 800px) {
+  .container {
+    width: 500px;
+  }
+
+  .leadership h2 {
+    font-size: 2.2rem;;
+  }
+
+  .leader-group {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: repeat(3, minmax(200px, auto));
+    gap: 2.5rem;
+    position: relative;
+    flex-wrap: wrap;
+  }
+
+  .leader-group h3 {
+    font-size: 1.8rem;
+  }
+  
+  .leader-group p {
+    font-size: 14px;
+  }
+  
+  .leader-group li {
+    font-size: 16px;
+  }
+  
+  .linkedin-icon {
+    font-size: 18px;
+  }
+}
